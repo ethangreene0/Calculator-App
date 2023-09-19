@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/calculator"
+        android:label="Calculator Plus"
+        android:roundIcon="@drawable/calculator"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+
+        tools:targetApi="31">
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            />
+
+        <activity
+            android:name=".NoIntVEqActivity"
+            android:exported="false"
+            android:label="Equation 5"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NoFinalVEqActivity"
+            android:exported="false"
+            android:label="Equation 4"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NoTimeEqActivity"
+            android:exported="false"
+            android:label="Equation 3"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NoDispEqActivity"
+            android:exported="false"
+            android:label="Equation 2"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NoAccEqActivity"
+            android:exported="false"
+            android:label="Equation 1"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MotionEquationsActivity"
+            android:exported="false"
+            android:label="Motion Equations"
+            android:parentActivityName=".MotionEquationsActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EnergyActivity"
+            android:exported="false"
+            android:label="Mass Energy Equation"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".QuadraticActivity"
+            android:exported="false"
+            android:label="Quadratic Equation"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <EditText
+        android:id="@+id/ValueA"
+        android:layout_width="230dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Enter A Value"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ValueB"
+        android:layout_width="230dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter B Value"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueA" />
+
+    <EditText
+        android:id="@+id/ValueC"
+        android:layout_width="230dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter C Value"
+        android:inputType="numberDecimal|numberSigned"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueB" />
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="138dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueC" />
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="380dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubmitButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

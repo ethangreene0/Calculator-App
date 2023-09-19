@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotionEquationsActivity">
+
+    <Button
+        android:id="@+id/quadratic"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:onClick="LaunchNoAcc"
+        android:text="No Acceleration Equation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quadratic2"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:onClick="LaunchNoFV"
+        android:text="No Final Velocity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quadratic4" />
+
+    <Button
+        android:id="@+id/quadratic3"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:onClick="LaunchNoDisp"
+        android:text="No Displacement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quadratic" />
+
+    <Button
+        android:id="@+id/quadratic4"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:onClick="LaunchNoTime"
+        android:text="No Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quadratic3" />
+
+    <Button
+        android:id="@+id/quadratic5"
+        android:layout_width="393dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:onClick="LaunchNoIV"
+        android:text="No Initial Velocity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quadratic2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
